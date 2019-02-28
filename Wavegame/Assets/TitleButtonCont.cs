@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TitleButtonCont : MonoBehaviour {
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Maingame");
+        }
+
+    }
 
 
     public void Gamestart(){

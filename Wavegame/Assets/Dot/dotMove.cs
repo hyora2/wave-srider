@@ -38,7 +38,7 @@ public class dotMove : MonoBehaviour {
 
 	float tansindou_enn (float Tsyuki, float Asinpuku , float Rhatyou){
 
-		Vector2 iti = Vector2.zero; //中心を決めます。今回は(0,0,0)
+		Vector2 iti = Vector2.zero; //中心
 		float speed = Tsyuki;
 		float nfaiw;
 		float ram_x = pos.x;
@@ -49,7 +49,7 @@ public class dotMove : MonoBehaviour {
 		}
 		nfaiw = (ram_x / Rhatyou ) * Mathf.PI;//
 
-		//範囲を指定してあげると大きな円、小さな円を実装できます。
+		
 		//iti.x += Mathf.Sin(Time.time * speed) * sinpuku; 
 		iti.y += Mathf.Cos((Time.time * speed) - nfaiw) * Asinpuku;
 
